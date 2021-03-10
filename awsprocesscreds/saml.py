@@ -57,7 +57,7 @@ class SAMLAuthenticator(object):
 
 
 class GenericFormsBasedAuthenticator(SAMLAuthenticator):
-    USERNAME_FIELD = 'Username'
+    USERNAME_FIELD = 'UserName'
     PASSWORD_FIELD = 'Password'
 
     _ERROR_BAD_RESPONSE = (
@@ -255,7 +255,7 @@ class OktaAuthenticator(GenericFormsBasedAuthenticator):
 
 
 class ADFSFormsBasedAuthenticator(GenericFormsBasedAuthenticator):
-    USERNAME_FIELD = 'Username'
+    USERNAME_FIELD = 'UserName'
     PASSWORD_FIELD = 'Password'
 
     def is_suitable(self, config):
