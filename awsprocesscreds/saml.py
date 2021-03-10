@@ -57,8 +57,8 @@ class SAMLAuthenticator(object):
 
 
 class GenericFormsBasedAuthenticator(SAMLAuthenticator):
-    USERNAME_FIELD = 'username'
-    PASSWORD_FIELD = 'password'
+    USERNAME_FIELD = 'Username'
+    PASSWORD_FIELD = 'Password'
 
     _ERROR_BAD_RESPONSE = (
         'Received a non-200 response (%s) when making a request to: %s'
