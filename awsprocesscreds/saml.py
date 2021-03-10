@@ -255,8 +255,8 @@ class OktaAuthenticator(GenericFormsBasedAuthenticator):
 
 
 class ADFSFormsBasedAuthenticator(GenericFormsBasedAuthenticator):
-    USERNAME_FIELD = 'ctl00$ContentPlaceHolder1$UsernameTextBox'
-    PASSWORD_FIELD = 'ctl00$ContentPlaceHolder1$PasswordTextBox'
+    USERNAME_FIELD = 'Username'
+    PASSWORD_FIELD = 'Password'
 
     def is_suitable(self, config):
         return (config.get('saml_authentication_type') == 'form' and
